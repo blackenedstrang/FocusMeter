@@ -1,27 +1,35 @@
 ﻿using System.Diagnostics;
 using System.Net;
+using Raven.Client.Document;
 using Raven.Client.Embedded;
 
 namespace FocusMeter.Infrastructure
 {
     public class DocumentStoreContainer
     {
-        public static EmbeddableDocumentStore DocumentStore { get; set; }
+		public static DocumentStore DocumentStore { get; set; }
 
         public static bool CanShowDatabase { get; private set; }
 
-        public static void Initialize()
+        public static void Initialize(bool useEmbeddedMode)
         {
-            DocumentStore = new EmbeddableDocumentStore
-            {
-                DataDirectory = "Data",
-                UseEmbeddedHttpServer = true
-            };
+			if (useEmbeddedMode)
+			{
+				DocumentStore = new EmbeddableDocumentStore
+				                	{
+				                		DataDirectory = "Data",
+				                		UseEmbeddedHttpServer = true
+				                	};
+			}
+			else
+			{
+				//TODO: configure cloud-based settings
+			}
 
-            try
+        	try
             {
                 DocumentStore.Initialize();
-                CanShowDatabase = true;
+                CanShowDatabase = useEmbeddedMode;
             }
             catch (HttpListenerException)
             {
@@ -38,7 +46,8 @@ namespace FocusMeter.Infrastructure
         {
             if (CanShowDatabase)
             {
-                Process.Start(DocumentStore.HttpServer.Configuration.ServerUrl);
+            	var embeddedDocumentStore = DocumentStore as EmbeddableDocumentStore;
+                Process.Start(embeddedDocumentStore.HttpServer.Configuration.ServerUrl);
             }
         }
     }

@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Configuration;
 using System.Windows.Forms;
-using FocusMeter;
 using FocusMeter.Infrastructure;
 using FocusMeter.Model;
 using Application = System.Windows.Application;
+using Configuration = FocusMeter.Model.Configuration;
 
 namespace FocusMeter
 {
@@ -18,7 +19,9 @@ namespace FocusMeter
         
         public App()
         {
-            DocumentStoreContainer.Initialize();
+        	var useEmbeddedMode = Convert.ToBoolean(ConfigurationManager.AppSettings.Get("UseEmbeddedMode"));
+
+            DocumentStoreContainer.Initialize(useEmbeddedMode);
 
             StateManager = new StateManager(DocumentStoreContainer.DocumentStore, TimerState.NotWorking);
 
