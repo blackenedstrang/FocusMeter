@@ -5,7 +5,7 @@ using Raven.Client.Embedded;
 
 namespace FocusMeter.Infrastructure
 {
-    public class DocumentStoreContainer
+    public static class DocumentStoreContainer
     {
 		public static DocumentStore DocumentStore { get; set; }
 
