@@ -14,7 +14,7 @@ task clean {
 }
 
 task compile {
-    exec { msbuild  $base_dir\FocusMeter.sln /t:Clean /t:rebuild /p:Configuration=$config /p:DeployOnBuild=true /v:q /nologo /p:OutDir=$build_artifacts_dir}
+    exec { msbuild  $base_dir\FocusMeter.sln /t:Clean /t:rebuild /p:Configuration=$config /p:DeployOnBuild=true /v:q /nologo /p:OutDir="$build_artifacts_dir\"}
 }
 
 task zip {
