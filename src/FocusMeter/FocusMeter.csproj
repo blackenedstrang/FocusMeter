@@ -177,6 +177,9 @@
     <Resource Include="Assets\Icons\notworking.ico" />
     <Resource Include="Assets\Icons\productive.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TODO.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
