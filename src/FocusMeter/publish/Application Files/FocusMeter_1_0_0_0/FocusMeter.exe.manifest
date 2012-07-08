@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.0" name="FocusMeter.exe" publicKeyToken="74f75d3476aa85d0" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Assets\Icons\appicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FocusMeter" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="FocusMeter.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="1425408">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.7.4137.9688" publicKeyToken="A4292A325F69B123" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>fn2gj7jlt+dqto4gK9UC8ymBAD4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Esent.Interop.dll" size="326656">
+      <assemblyIdentity name="Esent.Interop" version="1.7.0.0" publicKeyToken="8DD49BBDAE3F61AF" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>4TlhWEd04RkDiEHHeTbfYvTD1tA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FocusMeter.exe" size="424448">
+      <assemblyIdentity name="FocusMeter" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>7tU95SUYZDfQ4ffdznOMlZmD2vI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hardcodet.Wpf.TaskbarNotification.dll" size="46592">
+      <assemblyIdentity name="Hardcodet.Wpf.TaskbarNotification" version="1.0.4.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>I8rZexOcEH2dvD/iz60Bqu8GuK4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.NRefactory.dll" size="503808">
+      <assemblyIdentity name="ICSharpCode.NRefactory" version="3.0.0.3800" publicKeyToken="EFE927ACF176EEA2" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>iucEB5GXI1eJ+qKPDQeBMHH1C+o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Lucene.Net.dll" size="786432">
+      <assemblyIdentity name="Lucene.Net" version="2.9.4.1" publicKeyToken="85089178B9AC3181" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>BQknYwe5C8EIoMo3A6Yd8FM/ySk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Lucene.Net.Contrib.Spatial.dll" size="31232">
+      <assemblyIdentity name="Lucene.Net.Contrib.Spatial" version="2.9.1.2" publicKeyToken="85089178B9AC3181" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8HZS0YhSG4knkfkYXPQ2G8dOU8Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Lucene.Net.Contrib.SpellChecker.dll" size="28672">
+      <assemblyIdentity name="Lucene.Net.Contrib.SpellChecker" version="2.9.2.1" publicKeyToken="85089178B9AC3181" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xs7gSJhvjr0kJDHlA6zLsTQpC68=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="354304">
+      <assemblyIdentity name="Newtonsoft.Json" version="4.0.8.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1R8goFxkLwVRB7dUCcSmpD8yb7g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NLog.dll" size="388096">
+      <assemblyIdentity name="NLog" version="2.0.0.0" publicKeyToken="5120E14C03D0593C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>EvUAZfWzshVSrkXPvcwd//UybF4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Abstractions.dll" size="150528">
+      <assemblyIdentity name="Raven.Abstractions" version="1.0.0.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>/iGmXFqtHRsx8lfZRQoPVJVq4Og=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Client.Embedded.dll" size="22016">
+      <assemblyIdentity name="Raven.Client.Embedded" version="1.0.0.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SO32sOa4cj6NCLpd6C7zqNfBHkE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Client.Lightweight.dll" size="375296">
+      <assemblyIdentity name="Raven.Client.Lightweight" version="1.0.0.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>gVoFMwQAkG3D8wXlmAZg4VHD86I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Database.dll" size="1825792">
+      <assemblyIdentity name="Raven.Database" version="1.0.0.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>zAsVTYq3zilffXqX+ES8eSI7fuk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Munin.dll" size="74752">
+      <assemblyIdentity name="Raven.Munin" version="1.0.0.0" publicKeyToken="974FEC519E29970D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>n1G24YspCheb+fJxYJvpFePhyh0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Storage.Esent.dll" size="119808">
+      <assemblyIdentity name="Raven.Storage.Esent" version="1.0.0.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Qj2Ry87WFdm7qwxMVpHlgtvB9VA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Storage.Managed.dll" size="66560">
+      <assemblyIdentity name="Raven.Storage.Managed" version="1.0.0.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>hood6mcO1MF3RS0WBb9bYwhWn4s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Assets\Icons\appicon.ico" size="195019">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VWsdYhJ3THBLTEDzWSdyItZFf1o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="FocusMeter.exe.config" size="225">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EptmgLpUs3LRzcY/2UW29dGHgfo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Pavilion\Slava" issuerKeyHash="559b1bebb566656259449f77d78a879cb05c8560" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>y5D+EsRL2MsOGMs60QNCV1D+2Hs=</DigestValue></Reference></SignedInfo><SignatureValue>kcRV8kNVc9ZpqPRckG19IQCOBa1A1sxPPVyAkP6u0uiTS9cmiUXx6JlxdkySYIhAQHYptNNonewCxRCvyTpP54RPkQGyhhWOsZXCPZysP2hMfHd4S7fhaKE8ymf4D8Vrrxm9eJQ4GHRNu6csw/x8W6h+SnS+tIQ3tGMb6qOwXxw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pvpljcBkEDZ8S5sXhRIDx6dk+RHe8N90B/6c6nMSIbdWRoI29vBYZtr3iALXDuRiPvq9Z1mrqmfDLIl99d0NFYdVJV3820vkkXICoVSPYUP8TVgEhFSKU37iapqfL0mJxW0ghDoDZhCdTv/E+W+b9N2uYV1MQkN3PAgvioeoX40=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7bd8fe50574203d13acb180ecbd84bc412fe90cb" Description="" Url=""><as:assemblyIdentity version="1.0.0.0" name="FocusMeter.exe" publicKeyToken="74f75d3476aa85d0" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Pavilion\Slava</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>kvBqDPHrgA2JIxFZOPZczRi+9E8=</DigestValue></Reference></SignedInfo><SignatureValue>Pw3Sz/pZiILsa31fdSn1jOmH2XmbUliRlzSQZQIGgHwF1L0rqZm5FSp4DlB4+6BKzintupL911/mfIrp8H52bQ5NlOLQbWzQjRIwnjlizMQUzrKxkV5qUei3xqABo86TmH13A5wqZMOsUUkE8NhjqC5YXHS6BUhsnPRI89g6jC4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pvpljcBkEDZ8S5sXhRIDx6dk+RHe8N90B/6c6nMSIbdWRoI29vBYZtr3iALXDuRiPvq9Z1mrqmfDLIl99d0NFYdVJV3820vkkXICoVSPYUP8TVgEhFSKU37iapqfL0mJxW0ghDoDZhCdTv/E+W+b9N2uYV1MQkN3PAgvioeoX40=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQP90vxODWvrJMxz6F4dEACjANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwAUABhAHYAaQBsAGkAbwBuAFwAUwBsAGEAdgBhMB4XDTEyMDcwODIwNDM0M1oXDTEzMDcwOTAyNDM0M1owJzElMCMGA1UEAx4cAFAAYQB2AGkAbABpAG8AbgBcAFMAbABhAHYAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEApvpljcBkEDZ8S5sXhRIDx6dk+RHe8N90B/6c6nMSIbdWRoI29vBYZtr3iALXDuRiPvq9Z1mrqmfDLIl99d0NFYdVJV3820vkkXICoVSPYUP8TVgEhFSKU37iapqfL0mJxW0ghDoDZhCdTv/E+W+b9N2uYV1MQkN3PAgvioeoX40CAwEAATANBgkqhkiG9w0BAQUFAAOBgQBD9/8cazQSPlrjqxVC953irYKLNnFSB73Jb5r2QTgWKfNvh3dVRjUsiobnxJRv+K/J0FqNM4AO6LXuPTfpqwZlnixPYisNMH39c2Jc4W1gfeF6I6wSknyo3m5vCRvHE3DP1axCwVNiVq0R0cIuEg2ENelqJWrXdD/LknsUFC4Zmg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
