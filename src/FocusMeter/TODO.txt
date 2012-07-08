@@ -1,3 +1,4 @@
+
+-Integrate https://github.com/synhershko/NAppUpdate OR use ClickOnce
 -﻿Connect to cloud-based storage like RavenHQ
--Integrate https://github.com/synhershko/NAppUpdate
 -Build website to see statistics
