@@ -32,9 +32,10 @@
     <InstallUrl>https://github.com/blackenedstrang/FocusMeter/tree/ClickOnce/src/FocusMeter/publish/</InstallUrl>
     <UpdateUrl>https://github.com/blackenedstrang/FocusMeter/tree/ClickOnce/src/FocusMeter/publish/</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <WebPage>Install</WebPage>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>Install.htm</WebPage>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.3</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
