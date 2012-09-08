@@ -1,4 +1,4 @@
 
--Integrate https://github.com/synhershko/NAppUpdate OR use ClickOnce
+-Integrate https://github.com/synhershko/NAppUpdate OR use ClickOnce OR https://github.com/github/Shimmer
 -﻿Connect to cloud-based storage like RavenHQ
 -Build website to see statistics
