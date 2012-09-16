@@ -29,8 +29,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://github.com/blackenedstrang/FocusMeter/tree/ClickOnce/src/FocusMeter/publish/</InstallUrl>
-    <UpdateUrl>https://github.com/blackenedstrang/FocusMeter/tree/ClickOnce/src/FocusMeter/publish/</UpdateUrl>
+    <InstallUrl>http://blackenedstrang.github.com/FocusMeter/</InstallUrl>
+    <UpdateUrl>http://blackenedstrang.github.com/FocusMeter/</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>Install.htm</WebPage>
@@ -237,9 +237,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
       <Visible>False</Visible>
-      <ProductName>Windows Installer 3.1</ProductName>
+      <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
