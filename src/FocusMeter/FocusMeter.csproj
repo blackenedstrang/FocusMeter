@@ -178,7 +178,9 @@
     <Resource Include="Assets\Icons\productive.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TODO.txt" />
+    <Resource Include="..\..\TODO.txt">
+      <Link>TODO.txt</Link>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
