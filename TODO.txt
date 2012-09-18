@@ -1,6 +1,8 @@
-
 -Finish with auto-update
 	-try ClickOnce once again using www.clickoncerevolution.com or CodePlex? But "Show Raven database" will be broken...
-	-wait for Shimmer to have good stable version and less shitty usage guide
--﻿Connect to cloud-based storage like RavenHQ or CloudBird
--Build website to see statistics (to exersise more with RavenDB, ExtJs etc) 
+	-merge ClickOnce to master
+-Store machine name
+-Connect to cloud-based storage like RavenHQ or CloudBire
+-Show database - open link to cloude Raven Studio
+-Wait for Shimmer to have good stable version and less shitty usage guide - then try instead of ClickOnce 
+-Build website to see statistics (to exersise more with RavenDB, ExtJs etc)
