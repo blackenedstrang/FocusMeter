@@ -48,16 +48,17 @@ bin-debug/*
 _ReSharper*/
 *.resharper
 [Tt]est[Rr]esult*
+*.ncrunchsolution
 
 #Project files
 [Bb]uild/
+
+#Build/deploy stuff
+deploy/
+publish/
 
 #Subversion files
 .svn
 
 # Office Temp Files
 ~$*
-
-deploy/
-FocusMeter.ncrunchsolution
-publish/
