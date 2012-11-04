@@ -23,23 +23,14 @@ namespace FocusMeter.Infrastructure
 			}
 			else
 			{
-				//TODO: configure cloud-based settings
+				DocumentStore = new DocumentStore
+					                {
+						                ConnectionStringName = "FocusMeterDB"
+					                };
 			}
 
-        	try
-            {
-                DocumentStore.Initialize();
-                CanShowDatabase = useEmbeddedMode;
-            }
-            catch (HttpListenerException)
-            {
-                DocumentStore = new EmbeddableDocumentStore
-                {
-                    DataDirectory = "Data"
-                };
-                DocumentStore.Initialize();
-                CanShowDatabase = false;
-            }
+			DocumentStore.Initialize();
+			CanShowDatabase = useEmbeddedMode;
         }
 
         public static void ShowDatabase()

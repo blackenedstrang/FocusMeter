@@ -64,3 +64,4 @@ publish/
 ~$*
 
 src/FocusMeter/CodePlex.xml
+src/FocusMeter/connectionStrings.config
