@@ -223,9 +223,6 @@
     <Resource Include="Assets\Icons\productive.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\..\TODO.txt">
-      <Link>TODO.txt</Link>
-    </Resource>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
@@ -246,6 +243,9 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+    <Resource Include="..\..\TODO.txt">
+      <Link>TODO.txt</Link>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\packages\RavenDB.Database.1.0.888\lib\net40\Raven.Studio.xap">
