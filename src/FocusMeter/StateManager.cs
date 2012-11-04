@@ -28,6 +28,7 @@ namespace FocusMeter
             {
                 session.Store(new StateChangedEvent
                 {
+					MachineName = Environment.MachineName,
                     Date = DateTimeOffset.Now, 
                     OldState = CurrentState, 
                     NewState = state
