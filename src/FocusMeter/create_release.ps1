@@ -17,6 +17,7 @@ if ($lastexitcode -ne 0) { throw }
 if ($lastexitcode -ne 0) { throw }
 
 # Create release on CodePlex
+# https://www.codeplex.com/Services/ReleaseService.asmx
 $service = New-WebServiceProxy -Uri "https://www.codeplex.com/Services/ReleaseService.asmx" -Namespace CodePlex
 $service.Timeout = 300000; #increase default timeout at least in 3 times
 $releaseName="Release $version"
