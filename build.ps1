@@ -3,7 +3,7 @@ properties {
     $build_artifacts_dir = "$base_dir\build\"
     $tools_dir = "$base_dir\tools\"
     $deploy_dir = "$base_dir\deploy\"
-    $global:config = "Debug"
+    $global:config = "Release"
 }
 
 task default -depends clean, compile, zip
@@ -19,7 +19,7 @@ task compile {
 
 task zip {
 
-    $deploy_archive = "$deploy_dir\focusmeter.zip"
+    $deploy_archive = "$deploy_dir\FocusMeter.zip"
 
     $old_directory = pwd
     cd $build_artifacts_dir
