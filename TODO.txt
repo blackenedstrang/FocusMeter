@@ -1,3 +1,0 @@
-
--Wait for Shimmer to have good stable version and less shitty usage guide...then try instead of ClickOnce 
--Build website to see statistics (to exersise more with RavenDB, ExtJs etc)
