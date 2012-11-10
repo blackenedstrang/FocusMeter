@@ -24,6 +24,9 @@ namespace FocusMeter
         
         public void ChangeState(TimerState state)
         {
+			if(state == CurrentState)
+				return;	
+
             using (var session = DocumentStore.OpenSession())
             {
                 session.Store(new StateChangedEvent
