@@ -26,9 +26,9 @@ namespace FocusMeter
 
             if (!DocumentStoreContainer.CanShowDatabase)
             {
-                MessageBox.Show("You need to run FocusMeter as Administrator if you want to show the embedded RavenDB database.\r\n\r\n" +
-                                "(This is because RavenDB Management Studio is hosted by an embedded http server that needs to listen to an http port.)",
-                                "Administrator privileges", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				//MessageBox.Show("You need to run FocusMeter as Administrator if you want to show the embedded RavenDB database.\r\n\r\n" +
+				//				"(This is because RavenDB Management Studio is hosted by an embedded http server that needs to listen to an http port.)",
+				//				"Administrator privileges", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 menuShowDatabase.IsEnabled = false;
             }
 
