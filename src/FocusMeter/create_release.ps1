@@ -8,7 +8,7 @@ rd "$publishDir" -recurse -force -ErrorAction SilentlyContinue | out-null
 mkdir "$publishDir" -ErrorAction SilentlyContinue | out-null
 
 # Publish
-$version = 17
+$version = 18
 & $msbuildExe /target:publish /p:Configuration=Release /p:PublishDir="$publishDir" /property:ApplicationRevision=$version
 if ($lastexitcode -ne 0) { throw }
 
