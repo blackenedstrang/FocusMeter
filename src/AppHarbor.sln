@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FocusMeter", "FocusMeter\FocusMeter.csproj", "{B2FC6880-4399-44C8-B0D5-E8B16A568082}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FA5A3D51-3250-499E-8FAB-EFBF949986FD}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -22,16 +20,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Debug|x86.ActiveCfg = Debug|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Debug|x86.Build.0 = Debug|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Release|Any CPU.ActiveCfg = Release|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Release|Mixed Platforms.Build.0 = Release|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Release|x86.ActiveCfg = Release|x86
-		{B2FC6880-4399-44C8-B0D5-E8B16A568082}.Release|x86.Build.0 = Release|x86
 		{45D367ED-571D-45AD-9D2E-1DE88623E2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{45D367ED-571D-45AD-9D2E-1DE88623E2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45D367ED-571D-45AD-9D2E-1DE88623E2A7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
