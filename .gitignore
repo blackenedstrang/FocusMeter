@@ -63,5 +63,6 @@ publish/
 # Office Temp Files
 ~$*
 
+# Custom exclusion
 src/FocusMeter/CodePlex.xml
 src/FocusMeter/connectionStrings.config
